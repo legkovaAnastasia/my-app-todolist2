@@ -13,6 +13,7 @@ import {
     TrackValueOfUncontrolledInput
 } from "./components/Input";
 import {Select} from "./components/Select/Select";
+import {MemoReact} from "./components/MemoReact";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
         <div className='App'>
             {/*/!*<OnOff on={on} onChange={setOn}/>*!/*/}
             {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
-            {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
+            <UncontrolledAccordion titleValue={"Menu"} />
+            <MemoReact/>
             {/*<Accordion titleValue={'Users'} collapsed={accordionCollapsed} onChange={()=>setAccordionCollapsed(!accordionCollapsed)}/>*/}
             {/*<UncontrolledRating />*/}
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
@@ -36,7 +38,7 @@ function App() {
             {/*<ControlledSelect/>*/}
             {/*<Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onChange={()=>setAccordionCollapsed(!accordionCollapsed)}*/}
             {/*           items={[{title:'www', value:1}, {title:'zdss', value:2}, {title:'qqq', value:3}]} onClick={()=>{console.log('was clicked')}}/>*/}
-        <Select value={value} onChange={setValue} items={[{title:'ooo', value:'1'}, {title:'wwww', value:'2'}, {title:'xxxx', value:'3'}]}/>
+        {/*<Select value={value} onChange={setValue} items={[{title:'ooo', value:'1'}, {title:'wwww', value:'2'}, {title:'xxxx', value:'3'}]}/>*/}
         {/*<Select onChange={()=>{}} items={[{title:'ooo', value:'1'}, {title:'wwww', value:'2'}, {title:'xxx', value:'3'}]} onClick={()=>{console.log('was clicked')}}/>*/}
         </div>
     )

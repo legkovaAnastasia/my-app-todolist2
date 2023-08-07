@@ -9,7 +9,7 @@ return <div>{
 }</div>
 }
 const Users = React.memo(UsersSecret)
-export const MemoReact = () => {
+export const ReactMemo = () => {
     const [counter, setCounter]=useState(0)
     const [users, setUsers]=useState(["Nastya", "Ura", "Katya"])
     return <div>

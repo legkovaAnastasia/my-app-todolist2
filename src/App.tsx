@@ -13,7 +13,7 @@ import {
     TrackValueOfUncontrolledInput
 } from "./components/Input";
 import {Select} from "./components/Select/Select";
-import {MemoReact} from "./components/MemoReact";
+import {HelpsReactMemo, UseMemo} from "./components/UseMemo";
 
 
 function App() {
@@ -26,8 +26,10 @@ function App() {
         <div className='App'>
             {/*/!*<OnOff on={on} onChange={setOn}/>*!/*/}
             {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
-            <UncontrolledAccordion titleValue={"Menu"} />
-            <MemoReact/>
+            {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
+            {/*<UseMemo/>*/}
+            <UseMemo/>
+            <HelpsReactMemo/>
             {/*<Accordion titleValue={'Users'} collapsed={accordionCollapsed} onChange={()=>setAccordionCollapsed(!accordionCollapsed)}/>*/}
             {/*<UncontrolledRating />*/}
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}

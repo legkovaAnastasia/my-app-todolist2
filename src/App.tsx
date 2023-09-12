@@ -6,7 +6,8 @@ import {SetTime} from "./components/UseEffect";
 function App() {
     return (
         <div className='App'>
-            <SetTime/>
+            <SetTime mode={'analog'}/>
+            <SetTime mode={'digit'}/>
            </div>
     )
 }
